@@ -4,6 +4,7 @@
 -- where customer_id=1
 -- order by first_name
 
+-- unique values
 -- select distinct state from customers;
 
 
@@ -17,20 +18,22 @@ from orders
 where order_date >= '2019-01-01'
 order by  order_date;
 
+-- and operator
 -- select * 
 -- from order_items
 -- where unit_price * quantity > 30 and order_id = 6;
 
-
+-- in operator
 -- select *
 -- from products 
 -- where quantity_in_stock in (49,38,72);
 
+-- between
 -- select *
 -- from customers 
 -- where birth_date between '1990-01-01' and '2000-01-01';
 
-
+-- like operator
 -- select *
 -- from customers
 -- where address like '%TRAIL%' or 
@@ -46,7 +49,7 @@ order by  order_date;
 -- |logical or
 -- [] abcd
 
-
+-- regexp
 -- select * 
 -- from customers
 -- where first_name regexp 'ELKA|AMBUR'
